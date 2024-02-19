@@ -1,82 +1,10 @@
-# uiz
+# UIZ
 
 ### A simple UI module built off PyQt5
 
-uiz is a simple GUI/UI module built using PyQt5. uiz is designed to be simple, and opensource. You can check out the code on GitHub at zPointless/uiz. You may setup the module either way. uiz is still a work in progress - but it is compatible with PyQt5. To use PyQt5 widgets in uiz, you can open a App and then use app.new_window(). This will return a `Window()` object. The attribute `Window().window` is a PyQt5 QWidget, such you can add things to it. Using uiz Elements, they are accessible at `uiz.Elements.{element_name}.` Here's a quick guide on using uiz:
+uiz is a simple GUI/UI module built using PyQt5. uiz is designed to be simple, and opensource. You can check out the code on GitHub at zPointless/
 
-## Installation
-uiz is avalible on pip. Simply run:
 ```
-pip install uiz
-```
-DO NOT Download it from github unless you are a experienced dev - I didn't add the LICENSE, etc. to GitHub
-
-
-## Initializing
-uiz can be initialized easily. Start by importing uiz.
-```python
-import uiz
-```
-Next, setup an app, and a window.
-```python
-import uiz
-
-app = uiz.App()
-window = app.newWindow('Window Title',1000,1000)
-```
-In this case, we are creating a 1000x1000px window. You can now setup some elements.
-```python
-import uiz
-
-app = uiz.App()
-window = app.newWindow('Window Title',1000,1000)
-
-text_element = uiz.Elements.Text('Hello World!', 'Courier New')
-def on_press():
-    print('button')
-button_element = uiz.Elements.Button('Press me!',on_press, 'Courier New')
-```
-Lets display them on the window.
-```python
-import uiz
-
-app = uiz.App()
-window = app.newWindow('Window Title',1000,1000)
-
-text_element = uiz.Elements.Text('Hello World!', 'Courier New')
-def on_press():
-    print('button')
-button_element = uiz.Elements.Button('Press me!',on_press, 'Courier New')
-
-text_element.show(window)
-button_element.show(window)
-# Or you can use window.show_element(button_element)
-```
-Finally, let's run the app.
-```python
-import uiz
-
-app = uiz.App()
-window = app.newWindow('Window Title',1000,1000)
-
-text_element = uiz.Elements.Text('Hello World!', 'Courier New')
-def on_press():
-    print('button')
-button_element = uiz.Elements.Button('Press me!',on_press, 'Courier New')
-
-text_element.show(window)
-button_element.show(window)
-# Or you can use window.show_element(button_element)
-
-app.run()
-```
-Of course, I have only demonstrated one of the many functions of the uiz module. This is a partial guide, and the uiz module isn't very well documented. Hopefully one day it could be better, but if you have anything for me to add or stuff like that, tweet out to @wx9cw, thanks for the support!
-
-
-## Demo Program
-```python
-from uiz import App, Elements
-
 # Instantiate the App
 app = App()
 
