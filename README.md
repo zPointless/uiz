@@ -1,7 +1,8 @@
 # uiz
-# uiz
 
 ### A simple UI module built off PyQt5
+
+**EDIT: My tar.gz file isn't working, use something else. Thank you! I will be trying to fix this problem, any help would be appreciated**
 
 uiz is a simple GUI/UI module built using PyQt5. uiz is designed to be simple, and opensource. You can check out the code on GitHub at zPointless/uiz. You may setup the module either way. uiz is still a work in progress - but it is compatible with PyQt5. To use PyQt5 widgets in uiz, you can open a App and then use app.new_window(). This will return a `Window()` object. The attribute `Window().window` is a PyQt5 QWidget, such you can add things to it. Using uiz Elements, they are accessible at `uiz.Elements.{element_name}.` Here's a quick guide on using uiz:
 
